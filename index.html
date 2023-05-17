@@ -134,7 +134,7 @@
     <p class="big-p" style="color: rgb(38, 38, 38)">
         Bottle makes scientific research easier to understand.
         Whether you're breaking into a new field or have never touched a paper before, we're making scientific 
-        information accessible to everyone.
+        information accessible to everyone!
     </p>
   </div>
 
@@ -162,9 +162,41 @@
   </div>
 
   <div class="row-div" style="background-color:#1f55ea; padding: 1em 10%">
-    <h2>So we've created a platform meant for <i>you</i>.</h2>
+    <h2>So we've created a platform meant for <i id="you">you</i>.<i style="font-family: Courier New; color: #1f55ea">y</i>
+      <i style="font-family: Impact; color: #1f55ea">ou</i></h2>
+    <script>      
+      window.addEventListener("scroll", listenerFunction);
+
+      function listenerFunction() {
+        if(isElementIntoView("#you")) {
+          changeFont();
+
+          removeEventListener("scroll", listenerFunction)
+        }
+      }
+
+      function delay(milliseconds){
+        return new Promise(resolve => {
+            setTimeout(resolve, milliseconds);
+        });
+      }
+
+      async function changeFont() {
+        const fonts = ["Impact", "Lucida Sans Unicode", "Courier New", "Lucida Console", "Arial"];
+        for (let i = 0; i < 15; i++) {
+          document.getElementById("you").style.fontFamily = fonts[i % 5];
+          await delay(250);
+        }
+      }
+
+      function isElementIntoView(el) { 
+        var e = document.querySelector(el);
+        var rect = e.getBoundingClientRect();
+        return  window.innerHeight-rect.top >= 0; 
+    }
+    </script>
     <p>
-      Bottle is an alternative to traditional research papers. 
+      Bottle is an alternative to traditional research papers, 
 
     </p>
 
