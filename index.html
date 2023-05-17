@@ -19,7 +19,8 @@
     .row-div {
       width: auto;
       min-width: 25em;
-      padding: 0.5em 10%
+      padding: 1em 2.5%;
+      border-radius: 2em;
     }
 
     .row-div:after {
@@ -31,7 +32,7 @@
     .column-div {
       float: left;
       text-align: center;
-      padding: 0 1.6% 0 1.6%;
+      padding: 0 4.1% 0 4.1%;
     }
 
     /* menu styles */
@@ -114,6 +115,10 @@
         line-height: 1.4;
     }
 
+    .small-p {
+      font-size: 1.35em;
+    }
+
     body,
     html {
         margin: 0em
@@ -143,7 +148,6 @@
     <button class="linky-button">Learn more ›</button>
   </div>
 
-
   <!-- SPACING DIV --> 
   <div class="my-div" style="height: 6.75em"></div>
 
@@ -151,9 +155,9 @@
     <div class="container-div" style>
         <h2>Scientific papers are hard to read,<br>and that's by design.</h2>
         <p style="padding: 0em 20% 0em 0em">
-            Scientific papers are designed to quickly communicate information between experts in the field. To accomplish this,
-            they utilize field-specific jargon, focus on heavy mathematical derivations, and lack important context—all of which
-            create a barrier to understanding for non-experts.
+            Scientific papers are designed to quickly communicate information between experts in the field. To accomplish 
+            this, they use field-specific jargon, focus on heavy mathematical derivations, and lack important 
+            context—all of which create a barrier to understanding for everyone else.
         </p>
         <p>
             <b>No scalable medium exists to communicate scientific research to non-experts.</b>
@@ -161,8 +165,8 @@
     </div>
   </div>
 
-  <div class="row-div" style="background-color:#1f55ea; padding: 1em 10%">
-    <h2>So we've created a platform meant for <i id="you">you</i>.<i style="font-family: Courier New; color: #1f55ea">y</i>
+  <div class="my-div" style="background-color: #1f55ea; padding: 1em 10%">
+    <h2 style="color: white">So we've created a platform meant for <i id="you">you</i>.<i style="font-family: Courier New; color: #1f55ea">y</i>
       <i style="font-family: Impact; color: #1f55ea">ou</i></h2>
     <script>      
       window.addEventListener("scroll", listenerFunction);
@@ -183,9 +187,9 @@
 
       async function changeFont() {
         const fonts = ["Impact", "Lucida Sans Unicode", "Courier New", "Lucida Console", "Arial"];
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 20; i++) {
           document.getElementById("you").style.fontFamily = fonts[i % 5];
-          await delay(250);
+          await delay(275);
         }
       }
 
@@ -195,29 +199,50 @@
         return  window.innerHeight-rect.top >= 0; 
     }
     </script>
-    <p>
-      Bottle is an alternative to traditional research papers, 
-
+    <p style="line-height: 1.45; color: white">
+      Bottle is an alternative to traditional scientific papers—a platform for scientific information in a format anyone
+      can understand. We source translations of scientific papers, written for the general public, from researchers in the field.
+      Then, we organize these translations (along with other useful information, such as definitions) into a node-based 
+      knowledge graph that shows the relationship between pieces of information. 
     </p>
+  </div>
 
-    <div class="column-div" style="width: 30%;">
-      <p>
-        <b>Researcher-Sourced</b>
-      </p>
+  <div class="my-div" style="padding: 1em 12.5%; background-color: #1f55ea">
+    <div class="row-div" style="background-color: white">
+      <div class="column-div" style="width: 25%">
+        <p style="font-size: 1.8em; color: #1f55ea"><b>Credible</b></p>
+        <p class="small-p" style="color: #1f55ea">
+          We source translations from experts at accreddited institutions, ideally the author of the original paper or study, so you can 
+          trust what you're reading. 
+          <br><br>
+          We're experimenting with AI translations, but these will be clearly marked as such.
+        </p>
+      </div>
 
+      <div class="column-div" style="width: 25%;">
+        <p style="font-size: 1.8em; color: #1f55ea"><b>Straightforward</b></p>
+        <p class="small-p" style="color: #1f55ea"> 
+          We drop the jargon and heavy derivations to focus on the intuition and core ideas behind each paper. 
+          <br><br>
+          We use analogies and well-known language to convey ideas, as if you're having a casual conversation with the expert. 
+        </p>
+
+      </div>
+      <div class="column-div" style="width: 25%;">
+        <p style="font-size: 1.8em; color: #1f55ea"><b>Context-Driven</b></p>
+        <p class="small-p" style="color: #1f55ea">
+            Visually exploring the relationships between content enables you to fit new information into your preexisting knowledge map.
+            <br><br>
+            That way, you can understand what you're reading in the context of your experiences.
+        </p>
+
+        <!-- SPACING DIV --> 
+        <div class="my-div" style="width: 40%; height: 0.75em"></div>
+      </div>
     </div>
-    <div class="column-div" style="width: 30%;">
-      <p>
-        <b>Straightforward</b>
-      </p>
 
-    </div>
-    <div class="column-div" style="width: 30%;">
-      <p>
-        <b>Context-Driven</b>
-      </p>
-
-    </div>
+    <!-- SPACING DIV --> 
+    <div class="my-div" style="height: 2.5em"></div>
   </div>
 
   <!-- SEPERATOR DIV -->
