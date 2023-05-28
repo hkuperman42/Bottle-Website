@@ -2,175 +2,14 @@
 <html>
 <head>
   <title>Bottle | Scientific Knowledge Made Accessible</title>
-  <style>
-    /* div styles */
-    .my-div {
-      width: auto;
-      min-width: 25em;
-      padding: 0.5em 10%
-    }
-
-    .container-div {
-        width: auto;
-        max-width: 70%;
-        padding: 1em 10% 1em 10%;
-    }
-
-    .half-width-div {
-        width: 50%;
-        padding: 0em 0em;
-    }
-
-    .row-div {
-      width: auto;
-      min-width: 25em;
-      padding: 1em 2.5%;
-      border-radius: 2em;
-    }
-
-    .row-div:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .column-div {
-      float: left;
-      text-align: center;
-      padding: 0 3.6%;
-    }
-
-    /* menu styles */
-    .menu {
-      background-color: white;
-      overflow: hidden;
-    }
-
-    .menu a {
-      float: right;
-      color: rgb(34, 34, 34);
-      text-align: center;
-      padding: 1.5em 1em;
-      text-decoration: none;
-      font-size: 1.5em;
-      font-family: Arial;
-      transition: 0.3s;
-    }
-
-    .menu a:hover {
-      color: #1f55ea;
-      /* #04d9ff */
-    }
-
-    /* button styles */
-    .button {
-        background-color: #1f55ea;
-        border: 1px solid #1f55ea;
-        color: white;
-        padding: 0.5em 0.75em;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.2em;
-        cursor: pointer;
-        border-radius: 2em;
-        transition: 0.2s;
-    }
-
-    .button:hover {
-      background-color: white;
-      color: #1f55ea;
-    }
-
-    .linky-button {
-      background-color: white;
-      border: 1px solid white;
-      color: #1f55ea;
-      padding: 0.5em 0.75em;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 1.2em;
-      cursor: pointer;
-      border-radius: 2em;
-    }
-
-    input[type=text], select, textarea {
-      width: 40%; 
-      padding: 0.75em;  
-      border-style: solid;
-      border-color: rgb(34, 34, 34);
-      border-radius: 0.5em;
-      box-sizing: border-box;
-      margin-top: 0.5em; 
-      margin-bottom: 1em;
-      margin-right: 2.5%;
-      resize: vertical;
-      font-size: 1em;
-      font-family: Arial;
-      color: rgb(34, 34, 34);
-    }
-
-    input[type=submit] {
-      background-color: #1f55ea;
-      border: 1px solid #1f55ea;
-      color: white;
-      padding: 0.75em 1em;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 2em;
-      transition: 0.2s;
-    }
-
-    input[type=submit]:hover {
-      background-color: white;
-      color: #1f55ea;
-    }
-
-    /* text styles */
-    h1 {
-        font-size: 3.5em;
-        font-family: Arial;
-        color: #1f55ea;
-    }
-
-    h2 {
-        font-size: 2.75em;
-        font-family: Arial;
-        color: white;
-    }
-
-    p {
-        font-size: 1.55em;
-        font-family: Arial;
-        color: white;
-        line-height: 1.6;
-    }
-
-    .big-p {
-        font-size: 1.7em;
-        line-height: 1.4;
-    }
-
-    .small-p {
-      font-size: 1.41em;
-    }
-
-    body,
-    html {
-        margin: 0em
-    }
-
-  </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body style="background-color: white;">
   <div class="menu">
-    <a href="#">Contact</a>
-    <a href="#">Team</a>
-    <a href="#">Platform</a>
+    <a href="contact.html" target="_self">Contact</a>
+    <a href="#" target="_self">Vision</a>
+    <a href="#" target="_self">Team</a>
+    <a href="#" target="_self">Platform</a>
   </div>
 
   <div class="my-div" style="width: 47.5%; padding: 1.75% 10% 0em 10%;">
@@ -332,12 +171,12 @@
 
     <div class="row-div">
       <form action="action_page.php">
-    
+
         <input type="text" id="name" name="name" placeholder="Name">
         <input type="text" id="email" name="email" placeholder="Email Address">
     
         <input type="submit" value="Submit">
-    
+
       </form>
     </div>
 
