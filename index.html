@@ -64,7 +64,7 @@
 
     /* button styles */
     .button {
-        background-color: #1f55ea; /* Green */
+        background-color: #1f55ea;
         border: 1px solid #1f55ea;
         color: white;
         padding: 0.5em 0.75em;
@@ -74,7 +74,7 @@
         font-size: 1.2em;
         cursor: pointer;
         border-radius: 2em;
-        transition: 0.3s;
+        transition: 0.2s;
     }
 
     .button:hover {
@@ -93,6 +93,41 @@
       font-size: 1.2em;
       cursor: pointer;
       border-radius: 2em;
+    }
+
+    input[type=text], select, textarea {
+      width: 40%; 
+      padding: 0.75em;  
+      border-style: solid;
+      border-color: rgb(34, 34, 34);
+      border-radius: 0.5em;
+      box-sizing: border-box;
+      margin-top: 0.5em; 
+      margin-bottom: 1em;
+      margin-right: 2.5%;
+      resize: vertical;
+      font-size: 1em;
+      font-family: Arial;
+      color: rgb(34, 34, 34);
+    }
+
+    input[type=submit] {
+      background-color: #1f55ea;
+      border: 1px solid #1f55ea;
+      color: white;
+      padding: 0.75em 1em;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 2em;
+      transition: 0.2s;
+    }
+
+    input[type=submit]:hover {
+      background-color: white;
+      color: #1f55ea;
     }
 
     /* text styles */
@@ -270,7 +305,7 @@
     <div class="my-div" style="height: 3.75em"></div>
   </div>
 
-  <div class="my-div" style="background-color: rgb(38, 38, 38); padding: 2em 0em">
+  <div class="my-div" style="background-color: rgb(38, 38, 38); padding: 1.5em 0em">
     <div class="container-div">
       <h2>Science belongs to everyone.</h2>
       <p style="padding: 0em 20% 0em 0em">
@@ -287,9 +322,28 @@
     <div class="my-div" style="height: 1em"></div>
   </div>
 
-  <div class="my-div" style="text-align: center; padding: 2em 0em 0em 0em">
-    <h2 style="color: rgb(34, 34, 34)">Stay updated.</h2>
-    <!-- Add content for div 5 here -->
+  <div class="my-div" style="text-align: center; padding: 2em 10%">
+    <h2 style="color:#1f55ea">Stay updated.</h2>
+
+    <p style="color: rgb(34, 34, 34)">
+      Right now, we're developing an alpha version of our platform! To gain early access when its ready and stay updated on our progress,
+      sign up below.
+    </p>
+
+    <div class="row-div">
+      <form action="action_page.php">
+    
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="text" id="email" name="email" placeholder="Email Address">
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+
+    <p style="color: rgb(34, 34, 34)">
+      Have questions or comments? Contact us at questions.bottle@gmail.com
+    </p>
   </div>
 </body>
 </html>
