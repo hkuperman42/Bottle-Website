@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bottle | Scientific Knowledge Made Accessible</title>
+  <title>Platform</title>
   <link rel="stylesheet" href="site.css">
 </head>
 <body style="background-color: white;">
   <div class="menu">
+    <a href="index.html" target="_self" style="float: left">Bottle</a>
     <a href="contact.html" target="_self">Contact</a>
     <a href="vision.html" target="_self">Vision</a>
     <a href="team.html" target="_self">Team</a>
     <a href="platform.html" target="_self">Platform</a>
-    <a href="index.html" target="_self" style="float: left">Bottle</a>
   </div>
 
-  <div class="my-div" style="width: 100%; padding: 0em 10%;">
-    <h1 class="huge-header" style="line-height: 1.25">Learn<br><b id="field" style="color: rgb(34, 34, 34)">Science</b><br>Better.</h1>
+  <div class="my-div" style="width: 80%; padding: 0em 10%;">
+    <h1 class="huge-header" style="line-height: 1.25">Learn<br><b id="field" style="color: rgb(34, 34, 34); opacity: 0;">Control Theory</b><br>Better.</h1>
   </div>
   <script>      
     window.onload = function() {
@@ -28,19 +28,22 @@
     }
 
     async function changeField() {
-      const fields = ["Control Theory", "Neuromorphic Computing", "Reinforcement Learning", "Einstein Tiling", "Cell Signaling", "Industrial Psychology"];
+      const fields = ["Neuromorphic Computing", "Reinforcement Learning", "Einstein Tiling", "Cell Signaling", "Industrial Psychology", "Control Theory"];
       var i = 0;
       const field = document.getElementById("field");
+      unfade(field);
       while (true) {
-        fade(field);
-        await delay(400);
-        field.innerHTML = fields[i];
-        unfade(field);
         await delay(4000);
         if (i == 5) {
           i = 0;
         } else {
           i++;
+        }
+        if (document.visibilityState == "visible") {
+          fade(field);
+          await delay(450);
+          field.innerHTML = fields[i];
+          unfade(field);
         }
       }
     }
@@ -68,15 +71,15 @@
           }
       }, 30);
     }
-
-    function isElementIntoView(el) { 
-      var e = document.querySelector(el);
-      var rect = e.getBoundingClientRect();
-      return  window.innerHeight-rect.top >= 0; 
-    }
-
-
   </script>
+
+  <!-- SPACING DIV --> 
+  <div class="my-div" style="height: 5.75em"></div>
+
+  <div class="my-div" style="background-color: rgb(34, 34, 34); padding: 1em 0em">
+    <!-- SPACING DIV --> 
+    <div class="my-div" style="height: 40em"></div>
+  </div>
 
   
 </body>
