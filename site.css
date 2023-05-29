@@ -85,6 +85,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: Arial;
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 2em;
@@ -126,8 +127,12 @@
   }
 
   /* text styles */
+  .huge-header {
+    font-size: 5.75em;
+  }
+
   h1 {
-      font-size: 3.5em;
+      font-size: 4.25em;
       font-family: Arial;
       color: #1f55ea;
   }

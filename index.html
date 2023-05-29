@@ -8,14 +8,15 @@
   <div class="menu">
     <a href="contact.html" target="_self">Contact</a>
     <a href="vision.html" target="_self">Vision</a>
-    <a href="#" target="_self">Team</a>
-    <a href="#" target="_self">Platform</a>
+    <a href="team.html" target="_self">Team</a>
+    <a href="platform.html" target="_self">Platform</a>
     <a href="index.html" target="_self" style="float: left">Bottle</a>
   </div>
 
-  <div class="my-div" style="width: 47.5%; padding: 3% 10% 0em 10%;">
-    <h1>Your gateway to scientific<br>research.</h1>
-
+  <div class="my-div" style="width: 60%; padding: 1.25% 10% 0em 10%; margin-bottom: 0em">
+    <h1 style="margin-bottom: 0em">Your gateway to scientific<br>research.</h1>
+  </div>
+  <div class="my-div" style="width: 47.5%; padding: 0em 10% 0em 10%; margin-top: 0em">
     <p class="big-p" style="color: rgb(38, 38, 38)">
         We make scientific research less complicated. 
         Bottle organizes and explains scientific information in a way you can understand.
@@ -24,7 +25,7 @@
 
   <div class="my-div" style="width: auto; padding: 0em 10%;">
     <button class="button">Try it out!</button>
-    <button class="linky-button">Learn more ›</button>
+    <a href="platform.html" class="linky-button">Learn more ›</a>
   </div>
 
   <!-- SPACING DIV --> 
@@ -171,13 +172,10 @@
     </p>
 
     <div class="row-div">
-      <form action="action_page.php">
-
+      <form action="send_contacts.php" method="post">
         <input type="text" id="name" name="name" placeholder="Name">
         <input type="text" id="email" name="email" placeholder="Email Address">
-    
         <input type="submit" value="Submit">
-
       </form>
     </div>
 
