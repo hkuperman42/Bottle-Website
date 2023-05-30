@@ -1,5 +1,12 @@
-/* div styles */
-.my-div {
+ /* div styles */
+  .nothing-div {
+    width: auto;
+    padding: 0em 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  .my-div {
     width: auto;
     min-width: 25em;
     padding: 0.5em 10%
